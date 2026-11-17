@@ -1,0 +1,33 @@
+{
+  "allowed_origins": [
+    "https://local-source-006.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-006.example.test/records/health_notice-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 151,
+        "sha256": "d639f06e319ee5caaaff95c3d378c25b3392c4692829f8d56d7ff372c227094c"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-006.example.test/records/health_notice-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-conflict.bin",
+        "status": 200,
+        "bytes": 156,
+        "sha256": "334b7f2aed4be454ac95dea2e13b47e32a715f16edfb21ba3efa1260de07075b"
+      }
+    }
+  ]
+}
