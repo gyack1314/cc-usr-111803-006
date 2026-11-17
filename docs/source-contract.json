@@ -1,0 +1,24 @@
+{
+  "roles": [
+    "health_notice",
+    "area_map"
+  ],
+  "relation_field": "county",
+  "required_fields": {
+    "health_notice": [
+      "county",
+      "notice_no",
+      "effective_from"
+    ],
+    "area_map": [
+      "county",
+      "map_revision",
+      "pages_expected"
+    ]
+  },
+  "source_identity": [
+    "kind",
+    "id",
+    "revision"
+  ]
+}

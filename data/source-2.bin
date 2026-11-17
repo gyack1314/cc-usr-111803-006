@@ -1,8 +1,8 @@
 {
   "kind": "area_map",
-  "id": "area_map-B",
+  "id": "area_map-A",
   "revision": "v1",
-  "period": "2026-11-13",
-  "subject": "sample-A",
-  "state": "pending"
+  "county": "甲县",
+  "map_revision": "map-r1",
+  "pages_expected": 2
 }
