@@ -2,7 +2,8 @@
   "roles": [
     "health_notice",
     "area_map",
-    "release_notice"
+    "release_notice",
+    "trade_batch"
   ],
   "relation_field": "county",
   "required_fields": {
@@ -22,6 +23,13 @@
       "notice_no",
       "released_on",
       "reason"
+    ],
+    "trade_batch": [
+      "batch_no",
+      "county",
+      "township",
+      "ship_on",
+      "heads"
     ]
   },
   "source_identity": [

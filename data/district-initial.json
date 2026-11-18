@@ -1,0 +1,123 @@
+{
+  "allowed_origins": [
+    "https://county.example.test"
+  ],
+  "sources": [
+    {
+      "url": "https://county.example.test/V-01",
+      "kind": "health_notice",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/V-01-map",
+      "kind": "area_map",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/T-A",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/T-B",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/T-C",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/T-D",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    }
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/V-01",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "district-notice-v1.bin",
+        "status": 200,
+        "bytes": 178,
+        "sha256": "a91c9b8252544b3ff6e220e13a1ed8a4bc52c485ab501afa59b111369bfab5c6"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/V-01-map",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "district-map-r1.bin",
+        "status": 200,
+        "bytes": 257,
+        "sha256": "04cb30de528abd476bbd317f49adf358e20e3b1731f23756ecd68b1144430314"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/T-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "district-batch-T-A.bin",
+        "status": 200,
+        "bytes": 182,
+        "sha256": "89b97f771902f27819439fe3210bf2d9b91edfb6a2dfd0f0661971e5b6bc46a0"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/T-B",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "district-batch-T-B.bin",
+        "status": 200,
+        "bytes": 182,
+        "sha256": "f446e61cc63baea186b20f03b426bcfa4e27ff2f3adbf7738b65eb316416f9fc"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/T-C",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "district-batch-T-C.bin",
+        "status": 200,
+        "bytes": 182,
+        "sha256": "c0fa66b404493369d08806fcffa2d0e626cf078e5f2997160d150c32ec54e4c6"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/T-D",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "district-batch-T-D.bin",
+        "status": 200,
+        "bytes": 182,
+        "sha256": "6821c762cd92c9fe8e5e5c333ec99f5431f3e9e6289ebc934f8e97ade600cce5"
+      }
+    }
+  ]
+}

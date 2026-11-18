@@ -1,0 +1,64 @@
+{
+  "allowed_origins": [
+    "https://county.example.test"
+  ],
+  "sources": [
+    {
+      "url": "https://county.example.test/V-01",
+      "kind": "health_notice",
+      "required": true,
+      "expected_revision": "v2"
+    },
+    {
+      "url": "https://county.example.test/V-01-map-page1",
+      "kind": "area_map",
+      "required": true,
+      "expected_revision": "v2"
+    },
+    {
+      "url": "https://county.example.test/V-01-map-page2",
+      "kind": "area_map",
+      "required": true,
+      "expected_revision": "v2"
+    },
+    {
+      "url": "https://county.example.test/T-A",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/T-B",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/T-C",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    },
+    {
+      "url": "https://county.example.test/T-D",
+      "kind": "trade_batch",
+      "required": true,
+      "expected_revision": "v1"
+    }
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/V-01-map-page2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "district-r2-page2.bin",
+        "status": 200,
+        "bytes": 248,
+        "sha256": "ae7ddf7478b6bdcef88bd4281e8224dddcd5f5f2e965ee836c67787756530a86"
+      }
+    }
+  ]
+}

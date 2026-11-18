@@ -9,3 +9,5 @@
     python -m capture_service.cli inspect data/normal.json
 
 容器运行：docker build -t pork-collection-006 .；docker run --rm pork-collection-006。
+
+县级演练资料 district-initial.json 可接入同一采集入口；districts.restrictions 展示单图范围下的批次状态，dispatch.refresh 形成独立持久交易审核清单。所有数据均为本地合成资料。

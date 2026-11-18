@@ -1,0 +1,13 @@
+{
+  "kind": "release_notice",
+  "id": "REL-01",
+  "revision": "v1",
+  "county": "甲县",
+  "notice_no": "V-01",
+  "released_on": "2026-11-16",
+  "reason": "甲镇范围核定解除",
+  "townships": [
+    "甲镇"
+  ],
+  "map_revision": "r2"
+}

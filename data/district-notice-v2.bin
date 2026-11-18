@@ -1,0 +1,9 @@
+{
+  "kind": "health_notice",
+  "id": "V-01",
+  "revision": "v2",
+  "county": "甲县",
+  "notice_no": "V-01",
+  "effective_from": "2026-11-14",
+  "map_revision": "r2"
+}

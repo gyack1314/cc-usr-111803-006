@@ -1,0 +1,10 @@
+{
+  "kind": "trade_batch",
+  "id": "T-B",
+  "revision": "v1",
+  "batch_no": "T-B",
+  "county": "甲县",
+  "township": "乙镇",
+  "ship_on": "2026-11-15",
+  "heads": 30
+}

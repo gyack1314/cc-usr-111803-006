@@ -1,0 +1,14 @@
+{
+  "kind": "area_map",
+  "id": "V-01-map-page1",
+  "revision": "v2",
+  "county": "甲县",
+  "notice_no": "V-01",
+  "map_revision": "r2",
+  "pages_expected": 2,
+  "pages_received": 1,
+  "page": 1,
+  "townships": [
+    "甲镇"
+  ]
+}

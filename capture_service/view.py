@@ -9,4 +9,9 @@ def overview(c,collection):
     result['collection']=collection
     result['records']=[{'type':r['type'],'id':r['id'],'version':r['version'],'source_sha256':r['source']} for r in rows]
     result['coverage']=coverage(c,collection)
+    if any(r['type']=='trade_batch' for r in rows):
+        from .districts import restrictions
+        from .dispatch import queue
+        result['batch_restrictions']=restrictions(c,collection)
+        result['dispatch_review']=queue(c,collection)
     return result
