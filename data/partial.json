@@ -1,0 +1,32 @@
+{
+  "allowed_origins": [
+    "https://local-source-006.example.test"
+  ],
+  "sources": [
+    {
+      "url": "https://local-source-006.example.test/records/health_notice-A",
+      "kind": "health_notice",
+      "required": true
+    },
+    {
+      "url": "https://local-source-006.example.test/records/area_map-B",
+      "kind": "area_map",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-006.example.test/records/health_notice-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 155,
+        "sha256": "657bbdcc0c33bcd508e2a9d7ab48df29638f158a17a8cc2bad5228959054904d"
+      }
+    }
+  ]
+}

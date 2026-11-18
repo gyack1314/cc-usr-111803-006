@@ -29,5 +29,17 @@
         "sha256": "94faced6610d51f56fce689d548ae9813c6aedbf8a79da227570ac153a060ca9"
       }
     }
+  ],
+  "sources": [
+    {
+      "url": "https://local-source-006.example.test/records/health_notice-A",
+      "kind": "health_notice",
+      "required": true
+    },
+    {
+      "url": "https://local-source-006.example.test/records/area_map-B",
+      "kind": "area_map",
+      "required": true
+    }
   ]
 }
