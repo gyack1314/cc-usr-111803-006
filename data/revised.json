@@ -6,12 +6,14 @@
     {
       "url": "https://local-source-006.example.test/records/health_notice-A",
       "kind": "health_notice",
-      "required": true
+      "required": true,
+      "expected_revision": "v2"
     },
     {
       "url": "https://local-source-006.example.test/records/area_map-B",
       "kind": "area_map",
-      "required": true
+      "required": true,
+      "expected_revision": "v1"
     }
   ],
   "steps": [
