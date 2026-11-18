@@ -32,6 +32,19 @@
         "bytes": 188,
         "sha256": "7235e54d184a18048833ed716049a244e282771675c166c98390a9ed92393004"
       }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-006.example.test/records/area_map-B",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-revised-map.bin",
+        "status": 200,
+        "bytes": 172,
+        "sha256": "dc39ba6b1d3c5cf7b11e28e75542b0180e7b66f50dbb3525b895e3b535af268e"
+      }
     }
   ]
 }

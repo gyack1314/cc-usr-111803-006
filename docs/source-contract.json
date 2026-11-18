@@ -14,7 +14,8 @@
     "area_map": [
       "county",
       "map_revision",
-      "pages_expected"
+      "pages_expected",
+      "pages_received"
     ],
     "release_notice": [
       "county",

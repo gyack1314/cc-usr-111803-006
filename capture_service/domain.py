@@ -17,7 +17,7 @@ def assess(rows):
     for first in left:
         for second in right:
             a,b=first['payload'],second['payload']
-            if a['county']==b['county'] and b['pages_expected']>0:
+            if a['county']==b['county'] and b['pages_expected']>0 and b['pages_received']==b['pages_expected']:
                 pairs.append({'left_id':first['id'],'left_version':first['version'],
                               'right_id':second['id'],'right_version':second['version'],
                               'left_source':first['source'],'right_source':second['source']})

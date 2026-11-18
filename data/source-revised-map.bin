@@ -1,0 +1,9 @@
+{
+  "kind": "area_map",
+  "id": "area_map-A",
+  "revision": "v2",
+  "county": "甲县",
+  "map_revision": "map-r1",
+  "pages_expected": 2,
+  "pages_received": 1
+}

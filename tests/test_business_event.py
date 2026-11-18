@@ -25,6 +25,6 @@ class BusinessEvent(unittest.TestCase):
             complete=coverage(c,COLLECTION)
             self.assertEqual(complete['received'],3)
             self.assertFalse(complete['missing_required'])
-            self.assertEqual(len(entities(c,COLLECTION)),3)
+            self.assertEqual(len(entities(c,COLLECTION)),4)
             self.assertEqual(get(c,COLLECTION,original),before)
             c.close()
