@@ -10,4 +10,4 @@
 
 容器运行：docker build -t pork-collection-006 .；docker run --rm pork-collection-006。
 
-县级演练资料 district-initial.json 可接入同一采集入口；districts.restrictions 展示单图范围下的批次状态，dispatch.refresh 形成独立持久交易审核清单。所有数据均为本地合成资料。
+县级演练资料 district-initial.json 可接入同一采集入口；districts.restrictions 按公告引用的整组范围页判定批次归属，页码齐备才算完整，缺页时未见乡镇保持待核而不判范围外；dispatch.refresh 形成独立持久交易审核清单，collect 每次接续后同步刷新，恢复后的建议不领先于已核实依据，旧放行建议随资料变化撤回。解除通知正文核实后按生效日解除同公告的子范围，不追溯、不及其余乡镇；正文未取得的解除文书只在依据中标记为待核。district-pending/complete/moved/release(-pending).json 依次演练公告修订、缺页补齐、同原文转址与解除通知的接续。所有数据均为本地合成资料。

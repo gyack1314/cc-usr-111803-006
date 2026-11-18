@@ -33,7 +33,10 @@ def register_sources(connection, collection, manifest_path):
                  source.get('expected_revision', '')))
 
 def collect(connection, collection, manifest_path):
-    """按清单重放来源，重启后接续已经接收的相同字节。"""
+    """按清单重放来源，重启后接续已经接收的相同字节。
+
+    接收链更新后同步刷新交易审核清单，恢复后的审核建议不领先于已核实依据，
+    也不漏掉需要撤回的旧放行建议。"""
     register_sources(connection, collection, manifest_path)
     replay = Replay(manifest_path)
     result = []
@@ -46,6 +49,9 @@ def collect(connection, collection, manifest_path):
                 'INSERT OR IGNORE INTO collection_progress(collection,source_url,body_sha256) VALUES(?,?,?)',
                 (collection, receipt['url'], digest))
         result.append(dict(source_url=receipt['url'], body_sha256=digest))
+    if any(row['type'] == 'trade_batch' for row in entities(connection, collection)):
+        from .dispatch import refresh
+        refresh(connection, collection)
     return result
 
 def progress(connection, collection):
