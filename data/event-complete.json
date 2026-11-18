@@ -1,0 +1,37 @@
+{
+  "allowed_origins": [
+    "https://local-source-006.example.test"
+  ],
+  "sources": [
+    {
+      "url": "https://local-source-006.example.test/records/health_notice-A",
+      "kind": "health_notice",
+      "required": true
+    },
+    {
+      "url": "https://local-source-006.example.test/records/area_map-B",
+      "kind": "area_map",
+      "required": true
+    },
+    {
+      "url": "https://local-source-006.example.test/records/release_notice-A",
+      "kind": "release_notice",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://local-source-006.example.test/records/release_notice-A",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-event.bin",
+        "status": 200,
+        "bytes": 188,
+        "sha256": "7235e54d184a18048833ed716049a244e282771675c166c98390a9ed92393004"
+      }
+    }
+  ]
+}

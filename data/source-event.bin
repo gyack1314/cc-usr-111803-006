@@ -1,0 +1,9 @@
+{
+  "kind": "release_notice",
+  "id": "release_notice-A",
+  "revision": "v1",
+  "county": "甲县",
+  "notice_no": "V-01",
+  "released_on": "2026-11-16",
+  "reason": "范围核定完成"
+}

@@ -1,7 +1,8 @@
 {
   "roles": [
     "health_notice",
-    "area_map"
+    "area_map",
+    "release_notice"
   ],
   "relation_field": "county",
   "required_fields": {
@@ -14,6 +15,12 @@
       "county",
       "map_revision",
       "pages_expected"
+    ],
+    "release_notice": [
+      "county",
+      "notice_no",
+      "released_on",
+      "reason"
     ]
   },
   "source_identity": [
